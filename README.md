@@ -92,19 +92,14 @@
     <form id="formulaire">
         <label for="nom">Nom :</label>
         <input type="text" id="nom" name="nom" required>
-
         <label for="prenom">Prénom :</label>
         <input type="text" id="prenom" name="prenom" required>
-
         <label for="dateNaissance">Date de Naissance :</label>
         <input type="date" id="dateNaissance" name="dateNaissance" required>
-
         <label for="photo">Photo :</label>
         <input type="file" id="photo" name="photo" accept="image/*" required>
-
         <input type="submit" value="Soumettre">
     </form>
-
     <div id="carteIdentite">
         <h2>Carte d'Identité</h2>
         <div class="nomPrenom">
@@ -149,7 +144,7 @@
             document.getElementById("photoCarte").src = e.target.result;
         }
         reader.readAsDataURL(photo);
-        
+    
         // Afficher la carte d'identité
         document.getElementById("carteIdentite").classList.add("generer");
 
